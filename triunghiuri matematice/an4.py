@@ -17,7 +17,7 @@ def citire():# citire numar natural /natural number reading
         n = n.strip(' +')# elimina spatiile libere si '+' de la inceputul si sfarsitul numarului /remove spaces and '+' from the beginning and end of number
     return int(n)
 
-def nr(a): #formeaza numerele care trebuie ridicate la patrat conform schitei de inceput / form the number that must be squred according to the initial sketch
+def nr(a): #formeaza numerele care trebuie ridicate la putere conform schitei de inceput / form the number that must be squred according to the initial sketch
     b=9
     for i in range(1,a):
         b += 9*10 ** i
