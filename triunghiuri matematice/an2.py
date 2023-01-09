@@ -23,7 +23,7 @@ def nr(a): #formeaza numerele care trebuie ridicate la patrat conform schitei de
         b += 10 ** i
     return b
 
-a = 9  #programul principal /the main program
+a = citire()  #programul principal /the main program
 for i in range(1, a + 1):
     t = nr(i)
     print(str(t)+"²="+str(t ** 2))
