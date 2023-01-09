@@ -1,2 +1,2 @@
 # Armonii-matematice
-Diverse armonii matematice /Various mathematical harmonies
+Diverse armonii  numerice /Various numerical harmonies
