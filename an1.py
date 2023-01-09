@@ -1,12 +1,12 @@
 """
 Afiseaza: /Display:
-1^2=1
-11^2=121
-101^2=10201
-1001^2=1002001
-10001^2=100020001
-100001^2=10000200001
-1000001^2=1000002000001
+1²=1
+11²=121
+101²=10201
+1001²=1002001
+10001²=100020001
+100001²=10000200001
+1000001²=1000002000001
 ............................."""
 
 def citire():# citire numar natural /natural number reading
@@ -26,4 +26,4 @@ def nr(a): #formeaza numerele care trebuie ridicate la patrat conform schitei de
 a=citire() #programul principal /the main program
 for i in range(1, a + 1):
     t = nr(i)
-    print(str(t)+"^2="+str(t ** 2))
+    print(str(t)+"²="+str(t ** 2))
