@@ -1,6 +1,6 @@
 # Realizat de /Produced by Casiu George Valentin
 """
-Afiseaza: /Display:
+Citeste un numar natural de la tastatura si afiseaza daca este prim/ Read a natural number from the keyboard and displays if it is prime
 """
 
 import math
