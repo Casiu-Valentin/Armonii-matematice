@@ -1,3 +1,8 @@
+# Realizat de /Produced by Casiu George Valentin
+"""
+Se citeşte n, număr natural/It reads n, natural number
+"""
+
 def citire():# citire numar natural
 	while True:
 		try:
