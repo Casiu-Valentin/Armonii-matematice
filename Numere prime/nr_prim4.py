@@ -34,6 +34,7 @@ def prim(a):# verifica daca un numar este prim /check if a number is prime
             for i in range(3,round(math.sqrt(a))+1,2):
                 if a%i==0:
                     ras=False
+                    break
     return ras
 
 a=citire()# Programul principal /The main program
