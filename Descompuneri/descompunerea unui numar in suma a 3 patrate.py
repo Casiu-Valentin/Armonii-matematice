@@ -10,8 +10,6 @@ Afiseaza: /Display:
 ........
 """
 
-import math
-
 def citire():# citire numar natural /natural number reading
     n=''
     while not(n.isdecimal()): # daca n nu e zecimal /if n is not decimal
@@ -31,8 +29,9 @@ def sd3p(n):# descompune un numar in suma a trei patrate/ descompose a number in
                 print(str(z)+'. '+str(n)+"="+str(i)+"²+"+str(j)+"²+"+str(int(t))+"²")
                 z+=1
 
-
-a=citire()# Programul principal /The main program
+# Programul principal /The main program
+import math
+a=citire()
 z=1
 for i in range(a+1):
     sd3p(i)
