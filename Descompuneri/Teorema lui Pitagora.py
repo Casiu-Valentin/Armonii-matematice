@@ -15,10 +15,10 @@ Afiseaza: /Display:
 
 import math
 
-def citire():# citire numar natural /natural number reading
+def citire(text):# citire numar natural /natural number reading
     n=''
     while not(n.isdecimal()): # daca n nu e zecimal /if n is not decimal
-        n = input("Introduceti un numar natural /Enter a natural number:")
+        n = input(text)
         n = n.strip(' +')# elimina spatiile libere si '+' de la inceputul si sfarsitul numarului /remove spaces and '+' from the beginning and end of number
     return int(n)
 
@@ -31,7 +31,7 @@ def  numerepitagoreice(n):
             z+=1
 
 
-a=citire()# Programul principal /The main program
+n=citire("Introduceti un numar natural/Enter natural number:")# Programul principal /The main program
 z=1
 for i in range(a+1):
     numerepitagoreice(i)
