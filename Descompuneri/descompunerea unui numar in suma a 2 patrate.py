@@ -27,8 +27,8 @@ def sd2p(n):# descompune un numar in suma a doua patrate/descompose a number int
             print(str(z)+'. '+str(n) + "=" + str(i) + "²+" + str(int(t)) + "²")
             z+=1
 
-
-a=citire()# Programul principal /The main program
+# Programul principal /The main program
+a=citire()
 z=1
 for i in range(a+1):
     sd2p(i)
