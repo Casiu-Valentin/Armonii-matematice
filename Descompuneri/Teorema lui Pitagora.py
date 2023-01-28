@@ -30,8 +30,8 @@ def  numerepitagoreice(n):
             print(str(z)+'. '+str(n)+"²="+str(i)+"²+"+str(int(t))+"²")
             z+=1
 
-
-n=citire("Introduceti un numar natural/Enter natural number:")# Programul principal /The main program
+# Programul principal /The main program
+n=citire("Introduceti un numar natural/Enter natural number:")
 z=1
 for i in range(a+1):
     numerepitagoreice(i)
