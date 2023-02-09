@@ -1,0 +1,43 @@
+# Realizat de /Produced by Casiu George Valentin
+"""
+Afiseaza /Display
+1. numarul 1026753849=32043²
+2. numarul 1042385796=32286²
+3. numarul 1098524736=33144²
+4. numarul 1237069584=35172²
+............................
+86. numarul 9761835204=98802²
+87. numarul 9814072356=99066²"""
+
+#numerele formate din toate cele zece cifre, luate o singură dată, care sunt patrate perfecte /the numbers formed from all ten digits, take only once, that are perfect squarse
+import math
+
+a=set() # formam o multime cu toate cifrele/ we form the set with all ten digits
+for i in range(10):
+	a.add(i)
+
+i=1
+b1=a.difference({0})
+for a1 in b1:
+	b2=a.difference({a1})
+	for a2 in b2:
+		b3=a.difference({a1,a2})
+		for a3 in b3:
+			b4=a.difference({a1,a2,a3})
+			for a4 in b4:
+				b5=a.difference({a1,a2,a3,a4})
+				for a5 in b5:
+					b6=a.difference({a1,a2,a3,a4,a5})
+					for a6 in b6:
+						b7=a.difference({a1,a2,a3,a4,a5,a6})
+						for a7 in b7:
+							b8=a.difference({a1,a2,a3,a4,a5,a6,a7})
+							for a8 in b8:
+								b9=a.difference({a1,a2,a3,a4,a5,a6,a7,a8})
+								for a9 in b9:
+									b10=a.difference({a1,a2,a3,a4,a5,a6,a7,a8,a9})
+									for a10 in b10:
+										t=a1*10**9+a2*10**8+a3*10**7+a4*10**6+a5*10**5+a6*10**4+a7*10**3+a8*10**2+a9*10+a10
+										if math.sqrt(t)==round(math.sqrt(t)):
+											print(str(i)+". numarul "+str(t)+"="+str(int(math.sqrt(t)))+"²")
+											i+=1
