@@ -1,6 +1,14 @@
 #Produced by/Realizat de Casiu George Valentin
 """
-
+The numbers formed from all ten digits, take only once, that are perfect squares/Numerele formate din toate cele zece cifre, luate o singură dată, care sunt patrate perfecte
+Afiseaza /Display
+1. numarul 1026753849=32043²
+2. numarul 1042385796=32286²
+3. numarul 1098524736=33144²
+4. numarul 1237069584=35172²
+............................
+86. numarul 9761835204=98802²
+87. numarul 9814072356=99066²
 """
 
 def permutr(k,p):#the recursive version of permutations/varianta recursiva a permutarilor
@@ -22,9 +30,9 @@ def permutr(k,p):#the recursive version of permutations/varianta recursiva a per
 
 #The main program/ Programul principal
 import math
-import sys
-sys.setrecursionlimit(5000)
-print(sys.getrecursionlimit())
+#import sys
+#sys.setrecursionlimit(5000)
+#print(sys.getrecursionlimit())
 ind=0
 p=list(range(10))
 permutr(0,p)
