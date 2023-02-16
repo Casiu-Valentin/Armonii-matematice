@@ -1,0 +1,30 @@
+#Produced by/Realizat de Casiu George Valentin
+"""
+
+"""
+
+def permutr(k,p):#the recursive version of permutations/varianta recursiva a permutarilor
+    global ind
+    if k==10:
+        if p[0]!=0:
+            t=0
+            for i in range(10):
+                t += p[i] * (10 ** (9 - i))
+        if math.sqrt(t) == round(math.sqrt(t)):
+            ind+=1
+            print(str(ind) + ". numarul " + str(t) + "=" + str(int(math.sqrt(t))) + "²")
+    else:
+        p[k]=k
+        for i in range(k+1):
+            p[i],p[k]=p[k],p[i]
+            permutr(k+1,p)
+            p[i], p[k] = p[k], p[i]
+
+#The main program/ Programul principal
+import math
+import sys
+sys.setrecursionlimit(5000)
+print(sys.getrecursionlimit())
+ind=0
+p=list(range(10))
+permutr(0,p)
