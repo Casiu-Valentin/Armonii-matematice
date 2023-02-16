@@ -18,9 +18,9 @@ def permutr(k,p):#the recursive version of permutations/varianta recursiva a per
             t=0
             for i in range(10):
                 t += p[i] * (10 ** (9 - i))
-        if math.sqrt(t) == round(math.sqrt(t)):
-            ind+=1
-            print(str(ind) + ". numarul " + str(t) + "=" + str(int(math.sqrt(t))) + "²")
+            if math.sqrt(t) == round(math.sqrt(t)):
+                ind+=1
+                print(str(ind) + ". numarul " + str(t) + "=" + str(int(math.sqrt(t))) + "²")
     else:
         p[k]=k
         for i in range(k+1):
