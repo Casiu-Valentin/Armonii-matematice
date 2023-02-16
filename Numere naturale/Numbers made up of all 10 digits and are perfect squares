@@ -10,9 +10,9 @@ Afiseaza /Display
 87. numarul 9814072356=99066²"""
 
 #numerele formate din toate cele zece cifre, luate o singură dată, care sunt patrate perfecte /the numbers formed from all ten digits, take only once, that are perfect squarse
-import math
+import matha={el for el in range(10)}
 
-a=set() # formam o multime cu toate cifrele/ we form the set with all ten digits
+a=set() # formam o multime cu toate cifrele echivalent cu/ we form the set with all ten digits equivalent to a={el for el in range(10)}
 for i in range(10):
 	a.add(i)
 
